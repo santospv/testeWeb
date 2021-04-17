@@ -23,7 +23,7 @@ namespace testeWeb.Controllers
             return categories;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("")]
 
         public async Task<ActionResult<Category>>Post([FromServices] DataContext context,[FromBody] Category model)

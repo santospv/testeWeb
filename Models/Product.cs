@@ -22,10 +22,12 @@ namespace testeWeb.Models
         
         public decimal Price {get; set;}
 
+         public Category Category {get; set;}
+
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Range(1, int.MaxValue, ErrorMessage = "O preço deve ser maior que zero")]
-
-        public Category Category {get; set;}
+        public int CategoryId {get; set;}
+        
 
     }
     
